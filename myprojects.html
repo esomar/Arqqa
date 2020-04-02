@@ -1,0 +1,141 @@
+<html>
+<style>
+.projects{
+	
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.projects > div{width: 570px;
+height: 160.35px;
+background: transparent;
+filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.04));
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(50px);
+--webkit-backdrop-filter: blur(50px);
+background-color: rgba(255, 255, 255, 0.5);
+}
+.line{
+    border-top: 1px solid #f1f1f3;
+    /* border-top-color: white; */
+    color: #fff;
+    width: 558px;
+    height: 89px;
+	 padding: 6px;}
+.myProgress {
+      top: 36px;
+    font-family: Verdana,sans-serif;
+    font-size: 7px;
+    text-align: end;
+    line-height: 1.2;
+    box-sizing: inherit;
+    border-radius: 16px;
+    color: #fff!important;
+    background-color: #f1f1f1!important;
+    position: relative;
+}
+
+.myBar {
+width: 233px;
+height: 8px;
+background: #fe0303;
+
+	border-radius: 16px;
+
+}
+.buttons {width: 148px;
+height: 48px;
+border-radius: 4px;
+background: #a31919;
+border-color:#a31919;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #fff;
+
+}
+.buttons:hover{
+background: #fe0303;
+
+}
+.logout{
+	
+    width: 186px;
+    height: 50px;
+    border-radius: 4px;
+    background: #43425d;
+    border: 1px solid #43425d;
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+
+}
+.title{
+font-family: "Source Sans Pro";
+font-weight: bold;
+font-size: 18px;
+line-height: 13px;
+text-align: left;
+color: #4d4f5c;
+
+}
+.mintitle{
+
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 15px;
+line-height: 25px;
+text-align: left;
+color: #43425d;
+opacity: 0.5;
+
+}
+</style>
+<head>
+</head>
+<body background="background.png">
+
+
+<div  style=' position: relative;
+    left: 24px; top: 16px;width: 604px;'>
+   <a href='myprojects.html'> <button class='buttons' style='background: #fe0303;' name = "myprojects"> My Projects </button></a>
+  <a href='myfeedback.html'>  <button  class='buttons' name = "myfeedback"> My Feedback </button></a>
+  <a href='viewsalary.html'>  <button class='buttons'  name = "viewsalary"> View Salary </button></a>
+   <a href='myinfo.html'> <button class='buttons'  name = "myinfo"> My Info </button></a>
+</div>
+<a href=''>
+    <button  style=' position: relative;
+    bottom: 34px;
+left: 1320px;'class='logout'  name = "logout"> Log Out </button></a>
+<div style=' position: relative;
+left: 24px;
+top: 16px;    width: 1504px;' class='projects'>
+<div>
+<div>
+<br>
+<label class='title'>Project's Name:</label>
+<br>
+<label class='mintitle'>Project Manager's Name:</label>
+<br>
+<label class='mintitle'>Due Date:</label>
+<br>
+</div>
+<br>
+<div class='line'>
+<div class="myProgress">
+    <div class="myBar" style="width:60%">60%</div>
+  </div>
+</div>
+<div>
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>

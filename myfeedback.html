@@ -1,0 +1,299 @@
+<html>
+<style>
+.container {
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.search{
+width: 570px;
+height: 45px;
+border-radius: 4px;
+background: #fff;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+text-align: left;
+color: #4d4f5c;
+}
+	
+.projects{
+	
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+   position: relative;
+    left: 24px;
+	top: 16px;
+	width: 1603;
+	font-family: Arial;
+font-weight: bold;
+font-size: 10px;
+text-align: left;
+color: #fff;
+
+}
+
+.projects > div{width: 373.5px;
+height: 130.17px;
+background: transparent;
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(50px);
+--webkit-backdrop-filter: blur(50px);
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+	
+	.logout{
+	
+    width: 186px;
+    height: 50px;
+    border-radius: 4px;
+    background: #43425d;
+    border: 1px solid #43425d;
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+
+}
+.buttons{width: 148px;
+height: 48px;
+border-radius: 4px;
+background: #a31919;
+border-color:#a31919;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #fff;
+}
+.buttons:hover{
+background: #fe0303;
+}
+
+.approve{width: 152px;
+height: 40px;
+border-radius: 6px;
+background: #fff;
+border: 2px solid #fff;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #a31919;
+
+}
+.title{font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 28px;
+line-height: 40px;
+text-align: left;
+color: #fff;
+}
+
+.projects > div >label{
+padding-top: 10px;}
+
+</style>
+	   
+</style>
+<head>
+
+<script>
+
+function myFunction() {
+
+  var s = document.getElementById("feedbackdiv");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } 
+}
+function myFunction2() {
+  var h = document.getElementById("feedbackdiv");
+  if (h.style.display === "block") {
+    h.style.display = "none";
+       
+  } 
+}
+
+</script>
+</head>
+<body background="background.png">
+
+
+
+
+<div  style=' position: relative;
+    left: 24px; top: 16px;width: 604px;'>
+   <a href='myprojects.html'> <button class='buttons'  name = "myprojects"> My Projects </button></a>
+  <a href='myfeedback.html'>  <button style='background: #fe0303;' class='buttons' name = "myfeedback"> My Feedback </button></a>
+  <a href='viewsalary.html'>  <button class='buttons'  name = "viewsalary"> View Salary </button></a>
+   <a href='myinfo.html'> <button class='buttons'  name = "myinfo"> My Info </button></a>
+</div>
+<a href=''>
+    <button  style=' position: relative;
+    bottom: 34px;
+left: 1320px;'class='logout'  name = "logout"> Log Out </button></a>
+	
+<div style='    width: 1504px;'class='projects'>
+<div>
+<label >Project Manager's name:</label>
+<br>
+<label >Project's name:</label>
+<br>
+<label >Employee's name:</label>
+<br>
+<button type="button" onclick="myFunction()" style="position: relative;left: 116;top: 22px;
+" class='approve' name = "viewfeedback"> View Feedback </button>
+</div>
+</div>
+
+
+<div class='div' id='feedbackdiv' style="display : none;">
+<div style="
+    position: relative;
+    left: 81px;
+    top: 110px;
+">
+<label class="label">Feedback</label>
+<div class="print" ></div>
+</div>
+<h3 style='position: relative;
+width: 100px;
+background: #a31919;
+font-family: Arial;
+font-weight: bold;
+font-size: 10px;
+text-align: left;
+color: #fff;
+top:294px;
+    left: 7px;
+    padding: 22px;'>performance rating:</h3>
+<div class="slidecontainer" style=''>
+  <input type="range" min="1" max="10" value="5
+  " class="slider" id="myRange">
+  <p style='    position: relative;
+    top: 270px;'>Value: <span id="demo"></span></p>
+</div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+
+<button type="button" onclick="myFunction2()"class='back'>Back</button>
+</div>
+
+</body>
+<style>
+.div{
+width: 1133px;
+height: 754px;
+background: transparent;
+border: 1px solid #fe0303;
+box-shadow: -9px 3px 6px #100e0e;
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(30px);
+--webkit-backdrop-filter: blur(30px);
+background-color: rgba(255, 255, 255, 0.15);
+display:none;
+position: relative;
+    left: 249px;
+    bottom: 201px;
+	
+}
+.label{
+position: relative;
+width: 100px;
+height: 50px;
+background: #a31919;
+font-family: Arial;
+font-weight: bold;
+font-size: 10px;
+text-align: left;
+color: #fff;
+top: 49px;
+    padding: 22px;
+}
+.print{
+width: 799px;
+height: 156px;
+background: transparent;
+border: 1px solid #fe0303;
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(50px);
+--webkit-backdrop-filter: blur(50px);
+background-color: rgba(255, 255, 255, 0.5);
+position:relative;
+    left: 90px;
+    top: 15px;
+}
+.back{
+width: 280px;
+height: 81px;
+border-radius: 6px;
+background: #fff;
+font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+color: #000;
+position: relative;
+    left: 439px;
+    top: 303px;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+ -webkit-appearance: none;
+    width: 99%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position: relative;
+    top: 282px;
+    left: 3px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #A31919;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</html>

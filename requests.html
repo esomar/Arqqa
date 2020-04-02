@@ -1,0 +1,169 @@
+<html>
+<style>
+.container {
+display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.logout{
+width: 186px;
+height: 50px;
+border-radius: 4px;
+background: #43425d;
+border: 1px solid #43425d;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #fff;
+
+}
+
+
+
+.approve{width: 152px;
+height: 40px;
+border-radius: 6px;
+background: #fff;
+border: 2px solid #fff;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #a31919;
+
+}
+.decline{width: 152px;
+height: 40px;
+border-radius: 6px;
+border-color:#a31919;
+background: #a31919;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #fff;
+
+}
+
+.container > div{width: 1368px;
+height: 150px;
+background: transparent;
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(50px);
+--webkit-backdrop-filter: blur(50px);
+background-color: rgba(255, 255, 255, 0.5);
+}
+.search{
+width: 570px;
+height: 45px;
+border-radius: 4px;
+background: #fff;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+text-align: left;
+color: #4d4f5c;
+}
+.text{
+width: 686.24px;
+height: 40px;
+font-family: Helvetica;
+font-weight: bold;
+font-size: 30px;
+text-align: center;
+color: #100e0e;
+}
+.title{width: 119px;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 28px;
+line-height: 40px;
+text-align: left;
+color: #fff;
+position: relative;
+left: 21px;
+}
+
+.button{width: 148px;
+height: 48px;
+border-radius: 4px;
+background: #a31919;
+border-color:#a31919;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #fff;
+
+}
+.button:hover{
+background: #fe0303;
+
+}
+</style> 
+<body background="background.png">
+<div>
+<button class="logout" name="logout" style="
+    position: relative;
+    left: 1185;
+">
+log out
+</button>
+</div>
+
+<div class="navbarhrm">
+ <a href=''><button class="button" name="viewemp">
+View Employees
+</button></a>
+<a href='feedbacks.html'>
+ <button class="button" name="feedbak">
+Feedbak
+</button></a>
+<a href='requests.html'>
+ <button style='background: #fe0303;'class="button" name="requests">
+Requests
+</button></a>
+</div>
+
+
+<h3 class='title'>Requests:</h3>
+
+
+<input class="search" type="text" placeholder="Search" name="search" style="
+    bottom: 92px;
+    position: relative;
+    left: 800;
+">
+
+<form name="request" method = "POST" action ="" >
+<div class="container" style="
+    text-align: center;
+">
+<div style="">
+ <label class="text">Approval Needed:</label><br>
+  <label class="text"> Data<label><br>
+  <div style="position: relative;top: 44px;    text-align: left;"><label class="text" > Requested By</label></div>
+
+<div >
+<button class="approve" type="submit" name="Accept">
+Accept
+</button>
+
+<button class="decline" type="submit" name="decline">
+Decline
+</button>
+</div>
+</div>
+
+</div>
+</form>
+
+  
+
+
+
+</body>
+</html>

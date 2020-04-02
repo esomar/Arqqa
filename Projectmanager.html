@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+#myheader{
+    width: 119px;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 28px;
+line-height: 40px;
+text-align: left;
+color: #fff;
+position: relative;
+left: 21px;
+}
+.navbarpm{
+
+display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+
+    width: 864px;
+    height: 50px;
+    background: transparent;
+	    position: relative;
+    left: 21px;
+
+
+}
+
+ 
+.navbarpm > button {
+width: 148px;
+height: 48px;
+border-radius: 4px;
+background: #a31919;
+	font-family: Arial;
+font-weight: bold;
+font-size: 12px;
+line-height: 45px;
+text-align: center;
+color: #fff;
+border-color:#a31919;
+}
+button:hover{
+background: #fe0303;}
+.search{
+    width: 476px;
+height: 45px;
+border-radius: 4px;
+background: #fff;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+text-align: left;
+color: #4d4f5c;
+    position: relative;
+   left: 1004px;
+    bottom: 47px;
+}
+	
+.projects{
+	width: 1434px;
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  grid-auto-rows: minmax(100px, auto);
+  position: relative;
+    left: 21px;
+}
+.projects > div{width: 470px;
+height: 160.35px;
+background: transparent;
+filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.04));
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(50px);
+--webkit-backdrop-filter: blur(50px);
+background-color: rgba(255, 255, 255, 0.5);
+}
+.title{
+font-family: "Source Sans Pro";
+font-weight: bold;
+font-size: 18px;
+line-height: 13px;
+text-align: left;
+color: #4d4f5c;
+
+}
+.mintitle{
+
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 15px;
+line-height: 25px;
+text-align: left;
+color: #43425d;
+opacity: 0.5;
+
+}
+.br{width: 570px;
+height: 0px;
+background: transparent;
+border: 1px solid #f1f1f3;
+}
+.Progressbar {
+      top: 36px;
+	  width: 470px;
+    font-family: Verdana,sans-serif;
+    font-size: 7px;
+    text-align: end;
+    line-height: 1.2;
+    box-sizing: inherit;
+    border-radius: 16px;
+    color: #fff!important;
+    background-color: #f1f1f1!important;
+   
+}
+
+.progress {
+width: 233px;
+height: 8px;
+background: #fe0303;
+
+	border-radius: 16px;
+
+}
+.line{
+    border-top: 1px solid #f1f1f3;
+    width: 470px;
+	padding-top: 27px;
+   }
+	 
+	 .editicon{
+	 vertical-align: middle;
+    width: 16px;
+    position: inherit;
+    margin-left: 399px;
+    top: 5px;
+	 }
+	 .removeicon{
+	  vertical-align: middle;
+    width: 16px;
+    position: inherit;
+    left: 433px;
+    top: -16px;
+	 }
+	 .createproject{
+	width: 180px;
+    height: 50px;
+    border-radius: 6px;
+    background: #fff;
+    position: relative;
+    left: 1346px;
+    top: 356px;}
+	
+	.logout{
+	position: relative;
+    right: 175px;
+    top: 356px;
+    width: 186px;
+    height: 50px;
+    border-radius: 4px;
+    background: #43425d;
+    border: 1px solid #43425d;
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+
+}
+	   
+</style>
+<head>
+<div id="myheader">
+<h2> Projects<h2>
+</div>
+
+<div class="navbarpm">
+<button style='background: #fe0303;'>All Projects</button>
+<button>Active</button>
+<button>In Review</button>
+<button>Completed</button>
+<button>Cancelled</button>
+<button>Paused</button>
+
+</div>
+<form>
+  
+  <input type="text" class="search" name="fname" value="Search" >
+  
+</form>
+
+
+<div class="projects">
+
+
+<div>
+<div>
+
+<div ><a href="editproject.html"><img class="editicon" src="https://img.icons8.com/ios/50/000000/edit.png"/></a></div>
+
+<div style="position: absolute;"><img class="removeicon" src="https://img.icons8.com/ios/50/000000/cancel.png"></div>
+<label class='title'>Project's Name:</label>
+<br>
+<label class='mintitle'>Project Manager's Name:</label>
+<br>
+<label class='mintitle'>Due Date:</label>
+<br>
+</div>
+<div class='line'></div>
+<div class="Progressbar">
+    <div class="progress" style="width:60%">60%</div>
+  </div>
+
+
+
+</div>
+</div>
+<a href='addproject.html'>
+<button class="createproject">Create Project</button></a>
+<a href='login.html'><button class="logout">Log Out</button></a>
+</head>
+<body  background="background.png">
+
+
+
+</body>
+</html>

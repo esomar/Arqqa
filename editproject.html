@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<style>
+.myheader{
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 28px;
+line-height: 40px;
+text-align: left;
+color: #fff;
+}
+.formL{
+width: 100px;
+height: 50px;
+background: #a31919;
+font-family: Arial;
+font-weight: bold;
+font-size: 10px;
+text-align: left;
+color: #fff;
+padding: 21px;
+}
+.input{width: 799px;
+height: 50px;
+background: #fff;
+border: 1px solid #fe0303;
+
+background: transparent;
+border: 1px solid #fe0303;
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(50px);
+--webkit-backdrop-filter: blur(50px);
+background-color: rgba(255, 255, 255, 0.5);
+
+}
+.adde{
+width: 458px;
+height: 50px;
+background: #fff;
+font-family: Helvetica;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #100e0e;
+
+}
+.createproject{
+	width: 180px;
+    height: 64px;
+    border-radius: 6px;
+    background: #fff;
+    position: relative;
+    left: 0px;
+    left: 249px;
+    op: 456px;
+    top: 191px;
+	font-family: Helvetica;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #100e0e;
+
+}
+</style>
+<head>
+<script>
+
+function myFunction() {
+
+  var s = document.getElementById("emp-div");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } 
+}
+function myFunction2() {
+  var h = document.getElementById("emp-div");
+  if (h.style.display === "block") {
+    h.style.display = "none";
+       
+  } 
+}
+
+
+
+</script>
+<h2 class="myheader"> Edit Project:<h2>
+
+
+</head>
+<body background="background.png">
+<div style="width: 1151px;
+    position: relative;
+    left: 360px;
+    top: 35px;
+">
+<form >
+<div>  <label class="formL">Project's Name:</label> 
+  <input class="input"type="text" id="pname" name="fname"> </div><br>
+  <div><label class="formL">Project Description:</label>
+  <input class="input" type="text" id="pdesc" name="lname"></div> <br>
+  <div><label class="formL">Project Manager:</label>
+  <select class="input" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select></div>
+	  <br>
+	 <div> <label class="formL">Start Date:</label>
+  <input class="input" type="date" id="sdate" name="birthday"></div>
+  <br>
+  <div><label class="formL">End Date:</label>
+  <input class="input" type="date" id="edate" name="birthday"></div>
+  <button onclick='myFunction()'class="adde">Add new Employee</button>
+  <button class="createproject">Confirm</button>
+<a href='projectmanager.html'><button class="createproject" style="
+    position: relative;
+    left: -768px;
+    /* right: 23px; */
+">back</button></a>
+</form>
+</div>
+
+<div style='display:none;
+'id='emp-div'>
+<div class='container'>
+<div>
+
+
+<div style='
+       width: 37px;
+    position: relative;
+    left: 334px;'>
+	<a href="EditEmployee.html">
+	<img style='width: 15px;'class="editicon" src="https://img.icons8.com/ios/50/000000/edit.png">
+	</a>
+
+<img style='width: 15px;'id="remove" class="removeicon" src="https://img.icons8.com/ios/50/000000/cancel.png"></div>
+
+<div>
+<img src='background.png'style='width: 60px;height: 60px;border-radius: 52px;background:#fff;border: 1px solid #707070;'></img>
+<div style='position: relative;
+    left: 68px;
+   
+    bottom: 66px;'>
+<label>Full Name: <?php echo $res['full name']?></label><br>
+  <label>Department: <?php echo $res['deparetment']?></label><br>
+  <label>Mobile:<?php echo $res['mobile']?></label><br></div>
+  <div class='line'></div>
+  </div>
+  <div>
+  <input style='width: 30px;
+height: 30px;
+border-radius: 4px;
+background: transparent;
+border: 3px solid #a31919;position: relative;
+    bottom: 42px;
+'type="checkbox">
+  </div>
+</div>
+
+
+
+</div>
+<div>
+<button onclick='myFunction2()'style='width: 280px;
+height: 81px;
+background: #fff;
+border-radius:4px;
+font-family: Helvetica;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #100e0e;
+    position: relative;
+	    left: 142px;
+    top: 17px;
+'>back</button>
+<button style='width: 280px;
+height: 81px;
+background: #fff;
+border: 2px solid #fe0303;
+font-family: Helvetica;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #a31919;
+    position: relative;
+    left: 785px;
+    top: 17px;
+'>confirm</button>
+</div>
+</div>
+
+<style>
+
+.container {
+display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  width: 757px;
+  position: relative;
+    left: 380px;
+    bottom: 445px;
+}
+.container > div{
+width: 373.5px;
+height: 130.17px;
+background: transparent;
+/* Note: currently only Safari supports backdrop-filter */
+backdrop-filter: blur(50px);
+--webkit-backdrop-filter: blur(50px);
+background-color: rgba(255, 255, 255, 0.5);
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    color: #352525;
+}
+
+.text{
+font-family: Arial;
+font-weight: bold;
+font-size: 15px;
+text-align: left;
+color: #fff;
+
+
+}
+.title{font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 28px;
+line-height: 40px;
+text-align: left;
+color: #fff;
+}
+.line{
+   border-top: 1px solid #ffffff;
+    width: 374px;
+ 
+    position: relative;
+    bottom: 44px;
+   }
+ checkbox {
+  width: 30px;
+height: 30px;
+border-radius: 4px;
+background: transparent;
+border: 3px solid #a31919;
+position: relative;
+    bottom: 42px;
+}
+checkbox:after {
+ width: 15.1px;
+height: 10.8px;
+background: #fe0303;
+
+}
+</style>
+</html>
